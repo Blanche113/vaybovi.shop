@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: lightcoral;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .main {
+        background-color: #a2a2a2;
+        width: 100%;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-style: normal;
+        font-size: 1.2em;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav > div {
+        padding-right: 10px;
+    }
+
+    .menu {
+        padding-left: 20px;
+    }
+
+}
