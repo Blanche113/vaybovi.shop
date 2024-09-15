@@ -3,10 +3,16 @@
     padding: 0;
 }
 
+:root {
+    --c-main: #0049af;
+    --c-sec: #ff8a51;
+    --gray: #a6a6a6;
+}
+
 @media screen and (max-width: 600px) {
 
     body {
-        background-color: lightcoral;
+        background-color: var(--c-main);
     }
 
     a {
@@ -15,14 +21,20 @@
     }
 
     .main {
-        background-color: #a2a2a2;
         width: 100%;
+        height: 82vh;
+        background-color: var(--gray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #header {
         display: flex;
+        height: 8vh;
+        padding: 0px 10px;
         justify-content: space-between;
-        padding: 10px;
+        align-items: center;
         font-family: "Inter", sans-serif;
         font-weight: 700;
         font-style: bold;
@@ -38,8 +50,17 @@
         padding-right: 10px;
     }
 
+    .logo {
+        color: var(--c-sec);
+        font-size: 1.3em;
+    }
+
     .menu {
         padding-left: 20px;
+    }
+
+    .icon {
+        color: white;
     }
 
 }
